@@ -43,6 +43,8 @@ TARGET_KERNEL_CONFIG += vendor/bouquet_defconfig vendor/tulip.config
 TARGET_KERNEL_CLANG_VERSION := prelude
 TARGET_KERNEL_CLANG_AOSP := false
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
+TARGET_KERNEL_ADDITIONAL_FLAGS += LD=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin/ld.lld
+TARGET_KERNEL_ADDITIONAL_FLAGS += AR=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin/llvm-ar
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
