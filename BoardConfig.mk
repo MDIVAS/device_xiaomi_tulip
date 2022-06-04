@@ -40,6 +40,9 @@ TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/bouquet_defconfig vendor/tulip.config
+TARGET_KERNEL_CLANG_VERSION := prelude
+TARGET_KERNEL_CLANG_AOSP := false
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
