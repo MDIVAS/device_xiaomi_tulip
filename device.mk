@@ -63,7 +63,8 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay \
     ApertureOverlay \
-    EvolutionSettingsOverlay
+    EvolutionSettingsOverlay \
+    SystemUIOverlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
