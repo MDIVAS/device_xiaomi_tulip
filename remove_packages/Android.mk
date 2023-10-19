@@ -23,6 +23,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     SoundAmplifierPrebuilt \
     talkback \
     Tycho \
+    Video \
     VZWAPNLib \
     VzwOmaTrigger \
     WfcActivation
