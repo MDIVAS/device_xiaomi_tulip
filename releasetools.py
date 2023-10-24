@@ -34,3 +34,9 @@ def AddImage(info, dir, basename, dest):
   common.ZipWriteStr(info.output_zip, basename, data)
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
+  
+def FullOTA_InstallEnd(info):
+  basename = "boot.img"
+  dest = "/dev/block/bootdevice/by-name/boot"
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
+  return
