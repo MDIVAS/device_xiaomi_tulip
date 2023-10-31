@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "EvolutionSettingsOverlay",
+    name: "TulipSettingsOverlay",
     device_specific: true,
 }
